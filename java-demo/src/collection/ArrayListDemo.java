@@ -1,18 +1,8 @@
 package collection;
 
-import java.io.ObjectStreamException;
 import java.io.Serializable;
-import java.util.AbstractList;
-import java.util.Arrays;
-import java.util.Collection;
-import java.util.Comparator;
-import java.util.Iterator;
-import java.util.List;
-import java.util.ListIterator;
-import java.util.RandomAccess;
-import java.util.Spliterator;
+import java.util.*;
 import java.util.function.Consumer;
-import java.util.function.IntFunction;
 import java.util.function.Predicate;
 import java.util.function.UnaryOperator;
 import java.util.stream.Stream;
@@ -369,10 +359,6 @@ public class ArrayListDemo<E> extends AbstractList<E> implements List<E>, Random
         return null;
     }
 
-    @Override
-    public <T> T[] toArray(IntFunction<T[]> generator) {
-        return null;
-    }
 
     @Override
     public boolean removeIf(Predicate<? super E> filter) {

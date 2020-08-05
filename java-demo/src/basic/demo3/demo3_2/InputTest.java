@@ -20,6 +20,5 @@ public class InputTest {
 
         //display on console
         System.out.println("Hello, " + name + " ,next year,you'll be " + (age + 1));
-
     }
 }
