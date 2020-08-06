@@ -1,13 +1,14 @@
 package test;
 
 
-import java.util.Date;
-
 public class TestDemo {
     public static void main(String[] args) {
 
-        System.out.printf("%s %tB %<te,%<tY", "Due Date:", new Date());
+        int n = 9;
+        for (int i = 0; i <100; i++) {
+            System.out.println((int)(Math.random()*n));
 
+        }
     }
 
 }
