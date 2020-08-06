@@ -1,4 +1,4 @@
-package basic.demo4.demo4_1;
+package basic.demo4.demo4_2;
 
 import java.time.LocalDate;
 
@@ -35,6 +35,15 @@ public class Employee {
 
     public void raiseSalary(double byPercent) {
         double raise = salary * byPercent / 100;
-        
+        salary += raise;
+    }
+
+    @Override
+    public String toString() {
+        return "Employee{" +
+                "name='" + name + '\'' +
+                ", salary=" + salary +
+                ", hireDay=" + hireDay +
+                '}';
     }
 }
